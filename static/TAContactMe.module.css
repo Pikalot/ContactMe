@@ -1,0 +1,122 @@
+/* TAContactMe.module.css */
+@keyframes slideShow {
+  0% { background-image: url('first-image.jpg'); }
+  25% { background-image: url('second-image.jpg'); }
+  50% { background-image: url('third-image.jpg'); }
+  75% { background-image: url('fourth-image.jpg'); }
+  100% { background-image: url('first-image.jpg'); }
+}
+
+.contact {
+  background-color: #f0f0f0; /* Change background color as needed */
+  color: #333; /* Text color */
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Change the font-family as required */
+}
+
+.banner {
+  animation: slideShow 30s infinite;
+  height: 75vh; /* Adjust height as needed */
+  background-image: url('path-to-your-banner-image.jpg'); /* Path to an image */
+  background-size: cover;
+  background-position: center;
+  margin-left: auto; /* Center the banner horizontally */
+  margin-right: auto; /* Center the banner horizontally */
+  width: 100%; /* Adjust the width as needed for aesthetic margins */
+  background-color: #80ffff; /* Button color */
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.location-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: top; /* Aligns items vertically in the center */
+  padding: 20px;
+}
+
+.location-info > *:not(:last-child) {
+  margin-right: 20px; /* Set map 20 px apart from text */
+}
+
+.contact-info,
+.location-info,
+.newsletter {
+  flex: 1; /* gives equal width to each child */
+}
+
+.contact-info, 
+.location-info,
+.newsletter {
+  margin-right: 20px; /* or as needed */
+}
+
+.contact-info, .newsletter, .social-media, .location-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2,
+.newsletter h2,
+.social-media h2,
+.location-text h2 {
+  margin-bottom: 10px;
+  color: #000040; /* Section heading color */
+}
+
+.contact-info p,
+.newsletter p {
+  margin-bottom: 5px;
+}
+
+.newsletter form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter input[type='email'] {
+  flex-grow: 1; /* Allows the input to grow and fill available space */
+  padding: 10px;
+  margin-right: 10px; /* Spacing between input and button */
+  border: 1px solid #ccc;
+  max-width: 300px; /* This ensures it doesn't get too wide on larger screens */
+}
+
+.newsletter button {
+  background-color: #c0c0c0; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center; /* Center the text inside the button */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Align it inline with other elements */
+  font-size: 16px; /* Size of the text */
+  cursor: pointer; /* Change mouse cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.newsletter button:hover {
+  background-color: #636363; /* Darker blue on hover */
+}
+
+.newsletter button i {
+  margin-right: 5px;
+}
+
+.social-media .icons a {
+  display: inline-block;
+  margin-right: 10px; /* Spacing between icons */
+}
+
+.social-media .icons a i {
+  font-size: 24px; /* Icon size */
+}
+
+.social-media .icons a:hover {
+  color: #007bff; /* Icon hover color */
+}
+
+/* Add any other styles as needed */
