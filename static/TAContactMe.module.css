@@ -45,7 +45,8 @@
 
 .contact-info,
 .location-info,
-.newsletter {
+.newsletter,
+.business-hour {
   flex: 1; /* gives equal width to each child */
 }
 
@@ -65,6 +66,16 @@
 .location-text h2 {
   margin-bottom: 10px;
   color: #000040; /* Section heading color */
+}
+
+.business-hour {
+  text-align: center;
+  width: 100%;
+}
+
+.business-hour h1 {
+  margin-bottom: 10px;
+  color: #000079; /* Section heading color */
 }
 
 .contact-info p,
@@ -106,6 +117,11 @@
   margin-right: 5px;
 }
 
+.social-media {
+  text-align: right;
+  width: 100%;
+}
+
 .social-media .icons a {
   display: inline-block;
   margin-right: 10px; /* Spacing between icons */
@@ -119,4 +135,23 @@
   color: #007bff; /* Icon hover color */
 }
 
-/* Add any other styles as needed */
+#chat-icon-container {
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+  cursor: pointer;
+}
+
+/* Style for the chatbox, adjust as needed */
+#chat-box {
+  position: fixed;
+  bottom: 80px; /* Height of icon + desired offset */
+  right: 20px;
+  width: 300px; /* Width of chat box */
+  height: 400px; /* Height of chat box */
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  /* Additional styling */
+}
+
